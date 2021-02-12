@@ -10,6 +10,9 @@ services:
   web:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
+    environment:
+      - DEBUG=1
+      - SECRET_KEY=xw0qbnt*-61@@jmr)8pf0%d7302bk&21mf&_ze714la6=8yxw%
     volumes:
       - .:/app
     ports:
