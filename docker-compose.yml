@@ -20,7 +20,7 @@ services:
       - db
 
   nginx:
-    build: ./nginx
+    build: .
     restart: always
     ports:
       - "80:80"
