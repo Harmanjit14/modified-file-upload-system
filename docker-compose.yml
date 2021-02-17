@@ -15,12 +15,7 @@ services:
     volumes:
       - .:/app
     ports:
-      - "8000:8000"
+      - "80:80"
     depends_on:
       - db
 
-  nginx:
-    build: .
-    restart: always
-    ports:
-      - "80:80"
